@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.PatientPrescriptionActivity" 
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/PrecPatientName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/WritePrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrecItemName"
+        android:layout_below="@+id/PrecItemName"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Prescription..........................................................................................."
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/prescErrors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/WritePrescription"
+        android:layout_below="@+id/WritePrescription"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/submitPresc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prescErrors"
+        android:layout_marginRight="23dp"
+        android:onClick="submitPresc"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/launchUnseenPatientList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitPresc"
+        android:layout_alignBottom="@+id/submitPresc"
+        android:onClick="Back"
+        android:text="Back" />
+
+    <EditText
+        android:id="@+id/PrecItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PrecPatientName3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Name of Item Prescribed" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

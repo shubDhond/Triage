@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.VSMeasurementActivity" 
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/heartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/systolic"
+        android:layout_below="@+id/systolic"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Heart Rate"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/diastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/systolic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Diastolic BP"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/diastolic"
+        android:layout_alignLeft="@+id/diastolic"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Temperature"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/submitMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/heartRate"
+        android:layout_marginBottom="34dp"
+        android:onClick="submitMeasurement"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/measurementError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heartRate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/systolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/diastolic"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Systolic BP"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/patientName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/addPresc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitMeasurement"
+        android:layout_alignBottom="@+id/submitMeasurement"
+        android:layout_alignLeft="@+id/heartRate"
+        android:onClick="back"
+        android:text="Back" />
+
+</RelativeLayout>

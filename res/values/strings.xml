@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Triage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_patient_search">Triage</string>
+    <string name="title_activity_patient_records">Triage</string>
+    <string name="title_activity_vital_signs">Triage</string>
+    <string name="title_activity_vsmeasurement">Vital Signs</string>
+    <string name="title_activity_view_measurements">Vital Sign Measurements</string>
+    <string name="title_activity_patient_prescription">Triage</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_physician_menu">Menu</string>
+    <string name="title_activity_patient_info">Patient Information</string>
+    <string name="title_activity_all_prescriptions">Prescriptions</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_vital_signs_activity2">Vital Signs</string>
+    <string name="title_activity_graph">Graph</string>
+    <string name="title_activity_view_prescription">Prescription</string>
+    <string name="title_activity_unseen_patients">Patients Yet to be Seen</string>
+    <string name="title_activity_set_time">Set Date and Time</string>
+
+</resources>
